@@ -1,9 +1,9 @@
 const mongoose= require("mongoose")
 
 const ProductSchema= mongoose.Schema({
-    productId:Number,
+    productId:String,
     operation:String,
-    quantity:Number
+    quantity:String
 })
 
 const ProductModel= mongoose.model("product", ProductSchema)
